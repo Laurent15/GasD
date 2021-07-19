@@ -1,4 +1,4 @@
-//#include <DHT.h>
+#include "DHT.h"
 //#include <DHT_U.h>
 
 // Project structure, refer to https://arduino.stackexchange.com/questions/348/how-to-organize-my-arduino-projects-structure-for-easy-source-control
@@ -7,7 +7,7 @@
 #define DHTPIN 2        // Digital pin connected to the DHT sensor
 #define DHTTYPE DHT22   // DHT 22
 
-DHTesp dht(DHTPIN, DHTTYPE);
+DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
   delay(5000);
